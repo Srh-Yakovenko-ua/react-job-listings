@@ -1,12 +1,12 @@
-import {useEffect} from 'react';
-import {addPositions} from './positions-slice';
-import data from '../../mock/data.json';
-import {useDispatch} from 'react-redux';
+import { useEffect } from 'react'
+import { addPositions } from './positions-slice'
+import data from '../../mock/data.json'
+import { useDispatch } from 'react-redux'
 
 export const useFetchPositions = () => {
-    const dispatch = useDispatch()
+  const dispatch = useDispatch()
 
-    useEffect(() => {
-        dispatch(addPositions(data))
-    }, [])
+  useEffect(() => {
+    dispatch(addPositions(data))
+  }, [])
 }
